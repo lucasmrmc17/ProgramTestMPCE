@@ -1,0 +1,41 @@
+CREATE TABLE Processos(
+
+	IdProcesso int NOT NULL PRIMARY KEY IDENTITY(1,1),	
+	Titulo nvarchar(200) null,
+	Descricao text null,
+	DataDeCriacao datetime null,
+	Categoria int NOT NULL, 
+	Status int NOT NULL,
+	DataDeEdicao datetime null, 
+    	CONSTRAINT [FK_Processos_To_Categoria] FOREIGN KEY (Categoria) REFERENCES Categoria(IdCategoria), 
+	CONSTRAINT [FK_Processos_To_Status] FOREIGN KEY (Status) REFERENCES SisStatusProcesso(IdStatus)
+
+)
+
+CREATE TABLE Categoria(
+	
+	IdCategoria int NOT NULL PRIMARY KEY IDENTITY(1,1),	
+	Descricao nvarchar(max)
+
+)
+
+CREATE TABLE SisStatusProcesso(
+	
+	IdStatus int NOT NULL PRIMARY KEY IDENTITY(1,1),	
+	Descricao nvarchar(max)
+
+)
+
+INSERT INTO Categoria (Descricao) VALUES ('Reclamação')
+
+INSERT INTO Categoria (Descricao) VALUES ('Citação')
+
+INSERT INTO Categoria (Descricao) VALUES ('Contestação')
+
+INSERT INTO Categoria (Descricao) VALUES ('Setença')
+
+INSERT INTO SisStatusProcesso (Descricao) VALUES ('Recebido')
+INSERT INTO SisStatusProcesso (Descricao) VALUES ('Em analise')
+INSERT INTO SisStatusProcesso (Descricao) VALUES ('Em cumprimento')
+INSERT INTO SisStatusProcesso (Descricao) VALUES ('Cumprido')
+INSERT INTO SisStatusProcesso (Descricao) VALUES ('Rejeitado')
