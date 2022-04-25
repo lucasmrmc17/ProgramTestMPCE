@@ -1,0 +1,53 @@
+﻿body {
+    background-color: white;    
+}
+
+.NavBar {
+    width: 100%;
+    height: 60px;
+    display: inline;
+    position: fixed;
+    background-color: green;    
+}
+
+.dvHome {    
+    text-align: center;
+    position: relative;
+    left: 50px;
+    top: 100px;
+}
+
+.textBox {
+    border-radius: 5px;
+}
+
+.btn {
+    text-align: center;
+    font-weight:bold; 
+    border-radius: 4px;
+}
+
+.btn-success {
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+.btn-danger {
+    text-align: center;
+    color: white;
+    background-color: firebrick;
+}
+
+.btn-query {
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+.btn-back {
+    text-align: center;
+    background-color: white;
+}
+
+.btn-nav {
+    
+}
