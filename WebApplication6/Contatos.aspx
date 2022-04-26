@@ -69,10 +69,10 @@
 
             <asp:Panel runat="server" CssClass="panelDados2"> 
                 <b> Links Importantes</b><br />  <br />
-                <a href="PaginaNaoDesenvolvida.aspx" class="textRodape"> Portal</a><br />
-                <a href="PaginaNaoDesenvolvida.aspx" class="textRodape"> Canais</a><br />
-                <a href="PaginaNaoDesenvolvida.aspx" class="textRodape"> Institucional</a><br />
-                <a href="PaginaNaoDesenvolvida.aspx" class="textRodape"> Notícias</a><br />
+                <a href="PaginaNaoDesenvolvida.aspx" class="textRodape links"> Portal</a><br />
+                <a href="PaginaNaoDesenvolvida.aspx" class="textRodape links"> Canais</a><br />
+                <a href="PaginaNaoDesenvolvida.aspx" class="textRodape links"> Institucional</a><br />
+                <a href="PaginaNaoDesenvolvida.aspx" class="textRodape links"> Notícias</a><br />
             </asp:Panel>
 
 
