@@ -31,6 +31,18 @@ Public Class PopConsultarProcesso
             If Not DadosBusca.HasRows Then
                 Page.ClientScript.RegisterStartupScript(Me.GetType(), "alerta", "<script language=""javascript"">alert(' Processo de número:  " + codProcesso.ToString + " não cadastrato!!');</script>")
 
+                pnlTitulo.Visible = False
+
+                pnlArea.Visible = False
+
+                pnlCategoria.Visible = False
+
+                pnlStatus.Visible = False
+
+                btnEditar.Visible = False
+                btnExcluir.Visible = False
+                btnSalvarEdt.Visible = False
+
                 Exit Try
 
             End If
@@ -220,7 +232,7 @@ Public Class PopConsultarProcesso
 
     End Sub
 
-    Private Sub btnVoltar_Click(sender As Object, e As EventArgs) Handles btnVoltar.Click
+    Private Sub btnImage_Click(sender As Object, e As EventArgs) Handles btnImage.Click
 
         Response.Redirect("Home.aspx")
 

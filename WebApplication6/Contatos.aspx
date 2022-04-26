@@ -12,8 +12,8 @@
     <form id="form1" runat="server">
 
         <nav>
-            <img style="padding-top:10px; padding-left:10px; padding-bottom:10px;" src="Images\LogoNavBar.png"/>
-            <div style="width:30%; padding-left:10px; padding-top:10px;">
+            <asp:ImageButton id="btnImage" runat="server" ImageUrl="Images\LogoNavBar.png"/> 
+            <div style="width:30%; padding-left:10px; padding-top:10px; text-align:center;">
                 Ministério Público do Estado do Ceará
             </div>
             <div class="dropdown" style="width:20%;">

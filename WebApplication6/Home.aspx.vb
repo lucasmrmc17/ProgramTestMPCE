@@ -17,4 +17,10 @@
 
     End Sub
 
+    Private Sub btnImage_Click(sender As Object, e As EventArgs) Handles btnImage.Click
+
+        Response.Redirect("Home.aspx")
+
+    End Sub
+
 End Class

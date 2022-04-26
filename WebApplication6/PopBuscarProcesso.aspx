@@ -12,8 +12,8 @@
     <form id="form1" runat="server">
 
         <nav>
-            <img style="padding-top:10px; padding-left:10px; padding-bottom:10px;" src="Images\LogoNavBar.png"/>
-            <div style="width:30%; padding-left:10px; padding-top:10px;">
+            <asp:ImageButton id="btnImage" runat="server" ImageUrl="Images\LogoNavBar.png"/> 
+            <div style="width:30%; padding-left:10px; padding-top:10px; text-align:center;">
                 Ministério Público do Estado do Ceará
             </div>
             <div class="dropdown" style="width:20%;">
@@ -75,8 +75,7 @@
             <div id="dvBotoes" style="position:absolute; top:265px">
                 <asp:Button CssClass="btn btn-query" id="btnEditar" runat="server" Text="Editar Processo"  style="position:absolute; left:75px;" Visible="false"/>
                 <asp:Button CssClass="btn btn-danger" id="btnExcluir" runat="server" Text="Deletar Processo" style="position:absolute; left:210px;" Visible="false"/>
-                <asp:Button CssClass="btn btn-success" id="btnSalvarEdt" runat="server" Text="Salvar Edição"  style="position:absolute; left:155px; top:25px;" Visible="false"/>
-                <asp:Button CssClass="btn btn-back" id="btnVoltar" runat="server" Text="Voltar"  style="position:absolute; left:180px; top:50px;"/>
+                <asp:Button CssClass="btn btn-success" id="btnSalvarEdt" runat="server" Text="Salvar Edição"  style="position:absolute; left:155px; top:25px;" Visible="false"/>                
             </div>
 
         </div>

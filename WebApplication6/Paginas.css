@@ -161,3 +161,9 @@ nav ul li {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+#btnImage {
+    color: green;
+    background-color: green;
+    border-style: solid;
+}

@@ -12,8 +12,8 @@
     <form id="form1" runat="server">
 
         <nav>
-            <img style="padding-top:10px; padding-left:10px; padding-bottom:10px;" src="Images\LogoNavBar.png"/>
-            <div style="width:30%; padding-left:10px; padding-top:10px;">
+            <asp:ImageButton id="btnImage" runat="server" ImageUrl="Images\LogoNavBar.png"/> 
+            <div style="width:30%; padding-left:10px; padding-top:10px; text-align:center;">
                 Ministério Público do Estado do Ceará
             </div>
             <div class="dropdown" style="width:20%;">
@@ -64,8 +64,7 @@
             </div>
             
             
-            <asp:Button CssClass="btn btn-success" id="btnSalvar" runat="server" Text="Salvar Processo" style="position:absolute; left:180px; top:240px;"/>
-            <asp:Button CssClass="btn btn-back" id="btnVoltar" runat="server" Text="Voltar" style="position:absolute; left:210px; top:270px;"/>  
+            <asp:Button CssClass="btn btn-success" id="btnSalvar" runat="server" Text="Salvar Processo" style="position:absolute; left:180px; top:240px;"/>            
 
         </div>
 

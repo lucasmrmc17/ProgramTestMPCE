@@ -23,6 +23,15 @@ Partial Public Class PopCadastrarProcesso
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''Controle btnImage.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents btnImage As Global.System.Web.UI.WebControls.ImageButton
+
+    '''<summary>
     '''Controle txtPesquisa.
     '''</summary>
     '''<remarks>
@@ -66,13 +75,4 @@ Partial Public Class PopCadastrarProcesso
     '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
     '''</remarks>
     Protected WithEvents btnSalvar As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Controle btnVoltar.
-    '''</summary>
-    '''<remarks>
-    '''Campo gerado automaticamente.
-    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-    '''</remarks>
-    Protected WithEvents btnVoltar As Global.System.Web.UI.WebControls.Button
 End Class

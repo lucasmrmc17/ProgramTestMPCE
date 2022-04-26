@@ -168,7 +168,7 @@ Public Class PopCadastrarProcesso
 
     End Sub
 
-    Private Sub btnVoltar_Click(sender As Object, e As EventArgs) Handles btnVoltar.Click
+    Private Sub btnImage_Click(sender As Object, e As EventArgs) Handles btnImage.Click
 
         Response.Redirect("Home.aspx")
 
