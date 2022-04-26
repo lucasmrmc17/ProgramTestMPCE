@@ -13,20 +13,20 @@
 
         <nav>
             <img style="padding-top:10px; padding-left:10px; padding-bottom:10px;" src="Images\LogoNavBar.png"/>            
-            <ul>    
+            <ul>                              
                 <li> 
-                    <a href="Home.aspx" style="color:white;"> Pagina Inicial</a>
+                    <a class="links" href="Home.aspx" style="color:white;"> Pagina Inicial</a>
                 </li>
                 <li> 
-                    <a href="Home.aspx" style="color:white;"> Menu</a>
+                    <a class="links" href="Home.aspx" style="color:white;"> Menu</a>
                 </li>
                 <li>
-                    <a href="Home.aspx" style="color:white;"> Sobre Nós</a>
+                    <a class="links" href="Home.aspx" style="color:white;"> Sobre Nós</a>
                 </li>
                 <li>
-                    <a href="Contatos.aspx" style="color:white;"> Contatos</a>
+                    <a class="links" href="Contatos.aspx" style="color:white;"> Contatos</a>
                 </li>
-            </ul>            
+            </ul>
         </nav>
 
         <div class="Contatos">
@@ -61,10 +61,10 @@
 
             <asp:Panel runat="server" CssClass="panelDados3" style="width:30%;"> 
                 <b> MPCE nas Redes Sociais</b><br /><br />
-                <a href="https://www.instagram.com/accounts/login/?next=/mpce_oficial/"> <img src="Images\insta.png" /> </a>
-                <a href="https://br.linkedin.com/company/minist%C3%A9rio-p%C3%BAblico-do-estado-do-cear%C3%A1?trk=public_profile_experience-item_profile-section-card_subtitle-click"> <img src="Images\lk.png" /> </a>
-                <a href="https://www.youtube.com/user/MinisterioPublicoCE"> <img src="Images\yt.png" /> </a>
-                <a href="https://pt-br.facebook.com/mpce.oficial"> <img src="Images\fb.png" /> </a>                
+                <a href="https://www.instagram.com/accounts/login/?next=/mpce_oficial/" target="_blank"> <img src="Images\insta.png" /> </a>
+                <a href="https://br.linkedin.com/company/minist%C3%A9rio-p%C3%BAblico-do-estado-do-cear%C3%A1?trk=public_profile_experience-item_profile-section-card_subtitle-click" target="_blank"> <img src="Images\lk.png" /> </a>
+                <a href="https://www.youtube.com/user/MinisterioPublicoCE" target="_blank"> <img src="Images\yt.png" /> </a>
+                <a href="https://pt-br.facebook.com/mpce.oficial" target="_blank"> <img src="Images\fb.png" /> </a>                
             </asp:Panel>
 
         </div>

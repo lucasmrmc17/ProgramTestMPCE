@@ -13,11 +13,17 @@ nav {
 nav ul {
     font-size: 25px;
     width: 90%;
-    text-align: right;    
+    text-align: right;
 }
 
 nav ul li {
-    display: inline;
+    text-decoration: none;
+    display: inline-block;
+    margin-inline: 10px;    
+}
+
+.links {
+    text-decoration: none;
 }
 
 .Contatos {
