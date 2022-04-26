@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="PopBuscarProcesso.aspx.vb" Inherits="WebApplication6.PopConsultarProcesso" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="PaginaNaoDesenvolvida.aspx.vb" Inherits="WebApplication6.PaginaNaoDesenvolvida" %>
 
 <!DOCTYPE html>
 
@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="Paginas.css" />
-    <title>Buscar Processo</title>
+    <title>Pagina Não Encontrada</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -46,39 +46,13 @@
             </ul>
         </nav>
 
-        <div style="position:absolute; left:750px; top:60px; ">
-             <div style="position:absolute; left:10px; top:10px">
-                <label for="txtCodigo">Código do Processo:</label>            
-                <asp:TextBox id="txtCodigo" runat="server" CssClass="textBox"></asp:TextBox>                 
-                <asp:Button CssClass="btn" id="btnBuscar" runat="server" Text="Buscar Processo" style="position:absolute; left:195px; top:17px"/>
-            </div>
-
-            <asp:panel id="pnlTitulo" visible="false" style="position:absolute; left:10px; top:55px" runat="server">
-                <label for="txtTitulo" >Título:</label>
-                <asp:Textbox id="txtTitulo" runat="server" CssClass="textBox" />          
-            </asp:panel>
-
-            <asp:panel id="pnlCategoria" visible="false" style="position:absolute; left:250px; top:55px" runat="server">
-                <label for="dpCategoria" >Categoria:</label>  
-                <asp:Textbox id="txtCategoria" runat="server" CssClass="textBox" />     
-            </asp:panel>
-
-            <asp:panel id="pnlStatus" visible="false" style="position:absolute; left:10px; top:95px" runat="server">   
-                <label for="txtStatus" >Status:</label>   
-                <asp:textbox id="txtStatus" runat="server" CssClass="textBox" />
-            </asp:panel>
-
-            <asp:panel id="pnlArea" visible="false" style="position:absolute; left:10px; top:135px" runat="server">   
-                <label for="txtArea" >Descrição:</label><br />   
-                <asp:textbox id="txtArea" runat="server" Width="440px" height="100px" Wrap="true" TextMode="MultiLine" CssClass="textBox" />
-            </asp:panel>            
-            <div id="dvBotoes" style="position:absolute; top:265px">
-                <asp:Button CssClass="btn btn-query" id="btnEditar" runat="server" Text="Editar Processo"  style="position:absolute; left:75px;" Visible="false"/>
-                <asp:Button CssClass="btn btn-danger" id="btnExcluir" runat="server" Text="Deletar Processo" style="position:absolute; left:210px;" Visible="false"/>
-                <asp:Button CssClass="btn btn-success" id="btnSalvarEdt" runat="server" Text="Salvar Edição"  style="position:absolute; left:155px; top:25px;" Visible="false"/>
-                <asp:Button CssClass="btn btn-back" id="btnVoltar" runat="server" Text="Voltar"  style="position:absolute; left:180px; top:50px;"/>
-            </div>
-
+        <div style="text-align:center;">
+            <img src="Images\alert.png"/><br />
+            <b> Desculpe pelo transtorno!</b><br />
+            Essa página ainda está em desenvolvimento pela nossa equipe.<br />
+            Agradecemos a compreensão.<br />
+            <br />
+            <asp:button class="btn" ID="btnVoltar" runat="server" Text="Voltar"/>
         </div>
 
         <div class="rodape" runat="server">            
@@ -89,7 +63,7 @@
                 <br />
                 <b> Avenida General Afonso Alburquergue Lima, 130 - Cambeba,</b><br /> 
                 <b> Fortaleza-Ce - CEP: 60822-325</b> <br /> 
-                <br />               
+                <br />              
                 <b> (85) 3452-3769</b> <br />
             </asp:Panel>
 

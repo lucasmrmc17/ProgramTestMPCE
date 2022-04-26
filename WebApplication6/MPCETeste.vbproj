@@ -98,6 +98,7 @@
     </Content>
     <Content Include="Contatos.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="PaginaNaoDesenvolvida.aspx" />
     <Content Include="PopCadastrarProcesso.aspx" />
     <Content Include="PopBuscarProcesso.aspx" />
     <Content Include="Web.config" />
@@ -136,6 +137,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PaginaNaoDesenvolvida.aspx.designer.vb">
+      <DependentUpon>PaginaNaoDesenvolvida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaNaoDesenvolvida.aspx.vb">
+      <DependentUpon>PaginaNaoDesenvolvida.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="PopCadastrarProcesso.aspx.designer.vb">
       <DependentUpon>PopCadastrarProcesso.aspx</DependentUpon>
