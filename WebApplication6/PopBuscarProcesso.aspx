@@ -12,7 +12,15 @@
     <form id="form1" runat="server">
 
         <nav>
-            <img style="padding-top:10px; padding-left:10px; padding-bottom:10px;" src="Images\LogoNavBar.png"/>            
+            <img style="padding-top:10px; padding-left:10px; padding-bottom:10px;" src="Images\LogoNavBar.png"/>    
+            <ul style="width:220%;">   
+                <li>
+                    <asp:textbox class="textBox" runat="server" id="txtPesquisa" placeholder="Pesquisar..."></asp:textbox>
+                </li>
+                <li>
+                    <asp:button class="btn" runat="server" Text="Pesquisar" />
+                </li>
+            </ul>
             <ul>                              
                 <li> 
                     <a class="links" href="Home.aspx" style="color:white;"> Pagina Inicial</a>
