@@ -52,7 +52,7 @@
               
             <asp:Panel runat="server" CssClass="panelDados1">
                 <img src="Images\LogoNavBar.png"/><br />  
-                <b> Endereço e Contatos:</b><br />  
+                <b> Endereço e Contatos</b><br />  
                 <br />
                 <b> Avenida General Afonso Alburquergue Lima, 130 - Cambeba,</b><br /> 
                 <b> Fortaleza-Ce - CEP: 60822-325</b> <br /> 
@@ -61,7 +61,7 @@
             </asp:Panel>
 
             <asp:Panel runat="server" CssClass="panelDados2"> 
-                <b> Links Importante</b><br />  <br />
+                <b> Links Importantes</b><br />  <br />
                 <a href="Home.aspx" class="textRodape links"> Portal</a><br />
                 <a href="Home.aspx" class="textRodape links"> Canais</a><br />
                 <a href="Home.aspx" class="textRodape links"> Institucional</a><br />

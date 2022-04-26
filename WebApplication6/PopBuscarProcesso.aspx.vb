@@ -28,6 +28,13 @@ Public Class PopConsultarProcesso
             oCmd.CommandType = CommandType.Text
             Dim DadosBusca As SqlDataReader = oCmd.ExecuteReader(CommandBehavior.CloseConnection)
 
+            If Not DadosBusca.HasRows Then
+                Page.ClientScript.RegisterStartupScript(Me.GetType(), "alerta", "<script language=""javascript"">alert(' Processo de número:  " + codProcesso.ToString + " não cadastrato!!');</script>")
+
+                Exit Try
+
+            End If
+
             While DadosBusca.Read()
 
                 txtCodigo.Text = codProcesso
