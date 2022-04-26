@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Home.aspx.vb" Inherits="WebApplication6.Home" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Contatos.aspx.vb" Inherits="WebApplication6.Contatos" %>
 
 <!DOCTYPE html>
 
@@ -6,22 +6,39 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" type="text/css" href="Paginas.css" />
-    <title>MPCE</title>
+    <title>Contatos</title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="dvHome">   
-            <div>   
-                <img src="Images\Logo.png"/>
-            </div><br />
 
-            <div>   
-                <asp:Button CssClass=" btn btn-success" id="btnCadastrar" runat="server" Text="Cadastrar Processo" />
-                <asp:Button CssClass=" btn btn-query" id="btnBuscar" runat="server" Text="Buscar Processo"/>           
-            </div>
+        <nav>
+            <img style="padding-top:10px; padding-left:10px; padding-bottom:10px;" src="Images\LogoNavBar.png"/>            
+            <ul>    
+                <li> 
+                    <a href="Home.aspx" style="color:white;"> Pagina Inicial</a>
+                </li>
+                <li> 
+                    <a href="Home.aspx" style="color:white;"> Menu</a>
+                </li>
+                <li>
+                    <a href="Home.aspx" style="color:white;"> Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="Contatos.aspx" style="color:white;"> Contatos</a>
+                </li>
+            </ul>            
+        </nav>
+
+        <div class="Contatos">
+
+            <b> Endereço:</b><br />                  
+            <b> Avenida General Afonso Alburquergue Lima, 130 - Cambeba, Fortaleza-Ce - CEP: 60822-325</b> <br /> 
+            <br />
+            <b> Contatos:</b><br />          
+            <b> (85) 3452-3769</b> <br />
         </div>
-        
-        <div class="rodape" runat="server">            
+
+                <div class="rodape" runat="server">            
               
             <asp:Panel runat="server" CssClass="panelDados1">
                 <img src="Images\LogoNavBar.png"/><br />  
@@ -29,7 +46,7 @@
                 <br />
                 <b> Avenida General Afonso Alburquergue Lima, 130 - Cambeba,</b><br /> 
                 <b> Fortaleza-Ce - CEP: 60822-325</b> <br /> 
-                <br />                
+                <br />            
                 <b> (85) 3452-3769</b> <br />
             </asp:Panel>
 
@@ -51,6 +68,7 @@
             </asp:Panel>
 
         </div>
+
     </form>
 </body>
 </html>
