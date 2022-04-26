@@ -75,13 +75,14 @@ Public Class PopConsultarProcesso
     Public Function AtualizarProcesso(ByVal codProcesso As Integer, ByVal descricao As String) As Object
 
         Dim Retorno As Object = Nothing
-        Dim data As DateTime = Now
+        Dim dataEdicao As DateTime = Now
+        Dim data As String = dataEdicao.ToString.Substring(6, 4) + "-" + dataEdicao.ToString.Substring(3, 2) + "-" + dataEdicao.ToString.Substring(0, 2) + " " + dataEdicao.ToString.Substring(11, 2) + ":" + dataEdicao.ToString.Substring(14, 2) + ":" + dataEdicao.ToString.Substring(17, 2)
         Dim oDb As New ConnBDC()
         Dim objConnection As SqlConnection = New SqlConnection(oDb.AbreConexaoSQL())
 
         Dim oCmd As SqlCommand
         Dim strSQL As String
-        strSQL = "UPDATE Processo SET Descricao = '" & descricao & "', DataDeEdicao = '" & data & "' where Codigo = " & codProcesso
+        strSQL = "UPDATE Processos SET Descricao = '" & descricao & "', DataDeEdicao = '" & data & "' where IdProcesso = " & codProcesso
 
         oCmd = New SqlCommand(strSQL, objConnection)
 
