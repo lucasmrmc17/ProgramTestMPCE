@@ -19,6 +19,8 @@
             <div class="dropdown" style="width:20%;">
                 <button class="dropbtn"> Menu</button>
                 <div class="dropdown-content">
+                    <a href="PopCadastrarProcesso.aspx">Cadastrar Novo Processo</a>
+                    <a href="PopBuscarProcesso.aspx">Consultar Um Processo</a>
                     <a href="PaginaNaoDesenvolvida.aspx">Acesso Servidor</a>
                     <a href="PaginaNaoDesenvolvida.aspx">Notícias</a>
                     <a href="PaginaNaoDesenvolvida.aspx">Portal</a>

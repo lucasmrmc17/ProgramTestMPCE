@@ -19,6 +19,8 @@
             <div class="dropdown" style="width:20%;">
                 <button class="dropbtn"> Menu</button>
                 <div class="dropdown-content">
+                    <a href="PopCadastrarProcesso.aspx">Cadastrar Novo Processo</a>
+                    <a href="PopBuscarProcesso.aspx">Consultar Um Processo</a>
                     <a href="PaginaNaoDesenvolvida.aspx">Acesso Servidor</a>
                     <a href="PaginaNaoDesenvolvida.aspx">Notícias</a>
                     <a href="PaginaNaoDesenvolvida.aspx">Portal</a>
@@ -55,7 +57,7 @@
 
             <asp:panel id="pnlTitulo" visible="false" style="position:absolute; left:10px; top:55px" runat="server">
                 <label for="txtTitulo" >Título:</label>
-                <asp:Textbox id="txtTitulo" runat="server" CssClass="textBox" />          
+                <asp:Textbox id="txtTitulo" runat="server" CssClass="textBox"/>          
             </asp:panel>
 
             <asp:panel id="pnlCategoria" visible="false" style="position:absolute; left:250px; top:55px" runat="server">

@@ -42,6 +42,7 @@ Public Class PopConsultarProcesso
                 btnEditar.Visible = False
                 btnExcluir.Visible = False
                 btnSalvarEdt.Visible = False
+                txtCodigo.Text = ""
 
                 Exit Try
 
@@ -202,6 +203,11 @@ Public Class PopConsultarProcesso
     End Function
 
     Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
+
+        If txtCodigo.Text.Trim().Length = 0 Then
+            Page.ClientScript.RegisterStartupScript(Me.GetType(), "alerta", "<script language=""javascript"">alert('Por dentileza digite o número do processo.');</script>")
+            Exit Sub
+        End If
 
         Dim codProcesso As Integer = txtCodigo.Text
 
